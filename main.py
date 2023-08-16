@@ -6,18 +6,20 @@ import smtplib
 
 # credentials of the sender email
 
-email_sender = 'sumit.cerex@gmail.com'
-email_password = 'yggvcdylkphlcmwr'
+email_sender = 'insert your email id'
+email_password = 'your password' # passkey generated from your google account
 
 # opening the excel file to read the receivers email ids
-df = pd.read_excel("E:\email_automation\mail [13001-end].xlsx")
+df = pd.read_excel("Excel path")
 
-email_receiver = df["Email"].values
+email_receiver = df["coulmn_name"].values
 
-subject = 'Approcach to design your logo' #subject of the email
+subject = 'Email automation' #subject of the email
 # body of the email
 body = """
-hi
+hi,
+This is the message body.
+-The sender
 """
 
 zipped = zip(email_receiver)
