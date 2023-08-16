@@ -45,4 +45,4 @@ for(a) in zipped:
 
 # printing statement on successful execution
 if __name__ == "__main__":
-    print("Done")
+    main()
